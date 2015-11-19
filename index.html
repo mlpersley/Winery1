@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <title>River City Winery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+  <link href="css/normalize.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+  
+</head>
+
+<body>
+  <div id='wrapper'>
+
+    <div id='headCon'>
+      <div class='row'>
+        <div class='small-2 columns' id='imgHead' style='padding-left: 0px;'>
+          <img class="hide-for-medium hide-for-small" src='img/winepourst.png' alt='Wine Pouring'>
+        </div>
+        <div class='small-5 columns' id='logoCon'>
+          <img src='img/logo.png' alt='Winery Logo'>
+        </div>
+        <div class='small-5 columns' id='navCon'>       
+          <ul class="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="wine.html">Wine</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div> <!--header container ends-->
+      
+    <div class='row'>
+      <div class='large-12 columns'>
+        <div id='imgHolder'>
+          <div><img src="img/slidepic1.png" id='slideImg' alt='Picture of River City Winery"s wines'></div>
+          <div class="leftControl"><img onClick="image(-1)" class="conLeft" src="img/left.svg" alt='Arrow for slide navigation' ></div>
+          <div class="rightControl"><img onClick="image(1)" class="conRight" src="img/right.svg" alt='Arrow for slide navigation' ></div>
+        </div>
+      <div class='small-4 small-centered columns' id='dots'>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+        
+      </div>
+    </div><!--Slide Container ends-->
+  	
+    <div class='row'>
+      <div class='small-8 small-centered columns' id='decoCon'>
+        <ul class='decoNav hide-for-small'>
+          <li id='decoRight'><a href="wine.html"><img src="img/owine1.png" class='imgMed' alt='Burgundy box titled Our Wines'></a></li>
+          <li id='decoCenter'><img src="img/wine_couple.png" class='imgMed' alt='Cartoon couple sitting at table sipping wine'></li>
+          <li id='decoLeft'><a href="history.html"><img src="img/his.png" class='imgMed' alt='Black box titled Our History'></a></li>
+          <li id='decoRightBot'><img src="img/wine1.png" class='imgMed' alt='An image of wine, cheese, grapes and wine glasses'></li>
+          <li id='decoCenterBot'><a href="menu.html"><img src="img/omenu.png" class='imgMed' alt='Grey box titled Our Menu'></a></li>
+          <li id='decoLeftBot'><img src="img/wine2.png" class='imgMed' alt='A glass of red wine and a glass of white wine clicking in a toast.'></li>
+        </ul> 
+      </div>
+    </div><!--decorative nav ends-->
+
+    <div class='row'>
+      <div class='small-10 small-offset-1 columns eveCon'>
+      	<div class='events'>
+        	<h5>Join Our Event List</h5>
+        </div>
+        <div>
+          <p id='desPara'>We have great wine inspired events! &nbsp;Lots of fun, great food, and the best wines! &nbsp;Be amongst the first to receive advance notices of all upcoming events.</p>
+        </div>
+        <div>
+          <ul id='styleList'>
+            <li><a class="large button"  data-reveal-id="joinForm">Join Now</a></li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+     
+
+    <div id='spaceCon'></div>
+  		<div class='row' id='footCon'>
+        <footer id='footPage'>
+          <div class='small-6 columns text-left'>
+            <p>River City Winery &copy; 2015</p>
+          </div>
+            <div class='small-6 columns text-right'>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="wine.html">Wine</a></li>
+                <li><a href="history.html">History</a></li>
+              </ul>
+            </div>
+        </footer>
+ 			</div>
+
+  <!-- Popup Form to Join Event list -->
+    <div class="reveal-modal small" id="joinForm" data-reveal="">
+      <h3>Join Our Event List</h3>
+        <p>We have great wine inspired events! &nbsp;Lots of fun, great food, and award winning wines! &nbsp;Be amongst the first to receive advance notices of all upcoming events.</p>
+          <form>
+            <div class="row">
+              <div class="large-6 columns">
+                <label>First Name
+                  <input type="text"  pattern="^[A-Za-z]+$" placeholder="First Name" name="userName" id="firstName" tabindex="1" accesskey="N" required>
+                </label>
+              </div>
+              <div class="large-6 columns">
+                <label>Last Name
+                  <input type="text"  pattern="^[A-Za-z]+$" placeholder="Last Name" name="userName" id="lastName" tabindex="1" accesskey="N" required>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns">
+                <label>Email
+                  <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="noOne@example.com" name="userEmail" id="userEmail" tabindex="3" accesskey="E" required>
+                </label>
+              </div>
+              <div class="large-6 columns">
+                <label>Phone Number
+                 <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="XXX-XXX-XXXX" name="userPhone" id="userPhone" tabindex="4" accesskey="P">
+                </label>
+              </div>
+              <div class="large-4  columns">
+                <button class="button round" type="submit" tabindex="14">Submit</button> 
+              </div>
+              <div>
+                <button class="button round" type="reset" tabindex="15">Reset</button>
+              </div>
+            </div>
+          </form>
+        <a href='#' class='close-reveal-modal'>&#215;</a>
+    </div><!-- Popup form end -->
+
+
+  </div><!--wrapper ends-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/slide.min.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script> 
+  
+</body>
+</html>
